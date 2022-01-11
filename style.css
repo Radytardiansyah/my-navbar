@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+    background-color: rgb(11, 240, 240);
+    justify-content: space-between;
+
+    color: cadetblue;
+    height: 50px;
+    align-items: center ;
+}
+
+nav .logo{
+    font-family: 'Montserrat', sans-serif;;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    background-color: rgb(11, 240, 240);
+    justify-content: space-between;
+
+}
+
+nav ul li a{
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a;:hover {
+    color: cadetblue;
+}
+
+
+
+/* hamburger menu */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0.8;
+}
+
+
+
+.menu-toggle span {
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: rgb(11, 240, 240); ;
+    border-radius:  3px ;
+}
+
+
+
+
+/* responsive break point */
+
+/* ukuran tablet*/
+@media screen and (max-width: 768px ) {
+    nav ul {
+        width: 50% ;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 768px ) {
+    nav ul {
+        display: none ;
+    }
+}
